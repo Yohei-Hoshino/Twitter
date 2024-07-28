@@ -12,13 +12,13 @@
             <tr>
                 <td>お名前</td>
                 <td>
-                    <input type="text" name="user_name">
+                    <input type="text" name="user_name" value="<?php echo isset($_COOKIE['name']) ? $_COOKIE['name'] : ''; ?>">
                 </td>
             </tr>
             <tr>
                 <td>メールアドレス</td>
                 <td>
-                    <input type="text" name="user_email">
+                    <input type="text" name="user_email" value="<?php echo isset($_COOKIE['email']) ? $_COOKIE['email'] : ''; ?>">
                 </td>
             </tr>
             <tr>
